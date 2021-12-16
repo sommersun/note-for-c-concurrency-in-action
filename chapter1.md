@@ -25,10 +25,10 @@ daemon thread ~~ after my_thread.detach()
 
 ## 4. pass arguments to a thread function:  
 std::thread t(f,a,b);
-举了3种情况，这里理解的不太透彻
-a) std::string  buffer 指针未来得及转换
-b) 想传一个引用，但整个对象被复制了，需用std::ref()
-c) arguments cannot be copied but can only be moved: std::unique_ptr auto/std::move()
+举了3种情况，这里理解的不太透彻  
+a) std::string  buffer 指针未来得及转换  
+b) 想传一个引用，但整个对象被复制了，需用std::ref()  
+c) arguments cannot be copied but can only be moved: std::unique_ptr auto/std::move()  
 
 ## 5. transferring ownership of a thread：  
 resource-owning types  movable but not copyable  
