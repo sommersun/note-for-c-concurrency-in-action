@@ -39,7 +39,12 @@ std::moved();
 a) 普通transfer  
 注意给已经被赋值的 std::thread 进行重复赋值，so std::terminate() is called  
 b) transferred out of a function  
-c) transferred into a fucntion
+c) transferred into a fucntion  
+
+scoped_thread 注意它与 thread_guard 的区别： thread_gurad 只是guard某个线程，而不own该线程，会有多个thread_gurad guard 同一个线程。  
+
+https://stackoverflow.com/questions/56497350/thread-guard-vs-scoped-thread  
+
 
 
 
