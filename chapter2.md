@@ -45,6 +45,21 @@ scoped_thread 注意它与 thread_guard 的区别： thread_gurad 只是guard某
 
 https://stackoverflow.com/questions/56497350/thread-guard-vs-scoped-thread  
 
+A joining_thread class  这堆没看懂在说啥  
 
+## 6. choosing the number of threads at runtime  
+
+这段代码也挺难读的  
+
+```c++
+std::thread::hardware_concurrency();
+```
+
+## 7. Indentifying threads
+
+```c++
+std::this_thread::get_id()
+```
+这个类很强大，可以用来比较，sort, hash ，std 库都有实现
 
 
