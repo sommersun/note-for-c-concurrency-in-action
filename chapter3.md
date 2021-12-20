@@ -28,3 +28,8 @@ arguments to user-supplied functions.
 stack()的pop()为了保证其本身的安全，将其分割成top()和pop()两个操作，但这也带来了race condition。后面它提供了一些方法解决这个问题，有点深奥。  
 提供了一个thread-safe stack, (⊙﹏⊙) 体会不了，以后再看。
 
+### Deadlock
+two or more mutex
+The common advice for avoiding deadlock is to always lock the two mutexes in the same order。  
+在某些情况下并不容易实现，它举了一个交换数据的例子。  
+c++ 提供了 避免死锁的解决方案。
