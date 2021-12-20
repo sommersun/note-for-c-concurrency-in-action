@@ -24,6 +24,7 @@ arguments to user-supplied functions.
 但在多线程的情况下，会出现多种race condition:  
 1. empty()/top()  
 2. top()/pop()  
+
 stack()的pop()为了保证其本身的安全，将其分割成top()和pop()两个操作，但这也带来了race condition。后面它提供了一些方法解决这个问题，有点深奥。  
 。。。
 
