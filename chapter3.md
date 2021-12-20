@@ -19,6 +19,11 @@ std::lock_guard<std::mutex> guard(some_mutex);
 Don’t pass pointers and references to protected data outside the scope of the lock, whether by
 returning them from a function, storing them in externally visible memory, or passing them as
 arguments to user-supplied functions.
+### spotting race conditions inherent in interfaces
+这里使用std::stack这个例子，在单线程的情况它是安全的。  
+但在多线程的情况下，会出现多种race condition:  
+1. empty()/top()  
+2. top()/pop()  
+stack()的pop()为了保证其本身的安全，将其分割成top()和pop()两个操作，但这也带来了race condition。后面它提供了一些方法解决这个问题，有点深奥。
 
-empty()/top()
 
