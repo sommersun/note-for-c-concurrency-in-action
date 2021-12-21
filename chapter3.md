@@ -55,6 +55,11 @@ extending these guidelines beyond locks
 ###  flexible locking std::unique_lock  
 它提供了lock()和unlock()接口，能记录现在处于上锁还是没上锁状态，在析构的时候，会根据当前状态来决定是否要进行解锁（lock_guard就一定会解锁）。同样，可以使用std::defer_lock设置初始化的时候不进行默认的上锁操作。  
 使用起来就比lock_guard更加灵活，然后这也是有代价的，因为它内部需要维护锁的状态，所以效率要比lock_guard低一点。  
+### locking at an appropriate granularity    
+As this example shows, locking at an appropriate granularity isn’t only about the
+amount of data locked; it’s also about how long the lock is held and what operations
+are performed while the lock is held.  
+
 
 
 
