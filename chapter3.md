@@ -65,7 +65,11 @@ lazy initialization
 thread-safe lazy initialzation using a mutex  
 double-checked locking pattern  
 thread-safe lazy initialization of a class member using std::call_once
-
+### protecting rarely updated data structures  
+std::shared_lock<std::shared_mutex>
+std::lock_guard<std::shared_mutex>
+## recursive locking  
+may need change code design  
 
 
 
