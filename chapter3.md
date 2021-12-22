@@ -43,17 +43,6 @@ use a lock hierarchy :thread_local 线程周期
 extending these guidelines beyond locks
 ###  flexible locking std::unique_lock  
 它提供了lock()和unlock()接口，能记录现在处于上锁还是没上锁状态，在析构的时候，会根据当前状态来决定是否要进行解锁（lock_guard就一定会解锁）。同样，可以使用std::defer_lock设置初始化的时候不进行默认的上锁操作。  
-使用起来就比lock_guard更加灵活！然后这也是有代价的，因为它内部需要维护锁的状态，所以效率要比lock_guard低一点。  
-### Further guidelines for avoiding deadlock  
-deadlock baused by : lock , join() for each other(don’t
-wait for another thread if there’s a chance it’s waiting for you.)  
-avoid nested locks  
-avoid calling user_supplied code while holding  a clock  
-acquire locks in a fixed order  
-use a lock hierarchy :thread_local 线程周期
-extending these guidelines beyond locks
-###  flexible locking std::unique_lock  
-它提供了lock()和unlock()接口，能记录现在处于上锁还是没上锁状态，在析构的时候，会根据当前状态来决定是否要进行解锁（lock_guard就一定会解锁）。同样，可以使用std::defer_lock设置初始化的时候不进行默认的上锁操作。  
 使用起来就比lock_guard更加灵活，然后这也是有代价的，因为它内部需要维护锁的状态，所以效率要比lock_guard低一点。  
 ### locking at an appropriate granularity    
 As this example shows, locking at an appropriate granularity isn’t only about the
