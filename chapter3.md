@@ -59,7 +59,12 @@ extending these guidelines beyond locks
 As this example shows, locking at an appropriate granularity isn’t only about the
 amount of data locked; it’s also about how long the lock is held and what operations
 are performed while the lock is held.  
-
+## Alternative facilities for protecting shared data
+### protect shared data during intailization
+lazy initialization  
+thread-safe lazy initialzation using a mutex  
+double-checked locking pattern  
+thread-safe lazy initialization of a class member using std::call_once
 
 
 
