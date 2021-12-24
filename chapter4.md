@@ -26,3 +26,13 @@ std::packaged_task<>
 std::packaged_task<void()> task(f);
 std::future<void> res= task.get_future();
 ```
+### making (std::) promises
+have a small number of threads(possibly only one handling the connections), width each thread dealing with multiple connections at once.  
+
+### saving an exception for  the future
+when the task is invoked if the wrapped function throws an exception, that exception is stored in the futurein place of the result, ready to be thrown on a call to get().  
+
+~~ tired Friday why people can stand on 996
+
+### waiting from multiply threads
+wait for the same event from more than one thread
