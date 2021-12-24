@@ -20,4 +20,9 @@ std::shared_future<>
 ### returning values from backgrounds tasks
 
 ### Associating a task with a future
+std::packaged_task<>
 
+```c++
+std::packaged_task<void()> task(f);
+std::future<void> res= task.get_future();
+```
