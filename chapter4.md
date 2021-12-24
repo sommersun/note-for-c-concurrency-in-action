@@ -35,4 +35,7 @@ when the task is invoked if the wrapped function throws an exception, that excep
 ~~ tired Friday why people can stand on 996
 
 ### waiting from multiply threads
-wait for the same event from more than one thread
+wait for the same event from more than one thread  
+std::shared_future  copyable
+
+
