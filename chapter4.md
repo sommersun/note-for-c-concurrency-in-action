@@ -38,4 +38,18 @@ when the task is invoked if the wrapped function throws an exception, that excep
 wait for the same event from more than one thread  
 std::shared_future  copyable
 
+## waiting with a time  limit
+a duration based time out 
+a  absolute time out  
+two overloads of wait() ： wait_for() wait_until()  
+
+### clocks
+### durations
+### time points
+
+
+
+
+
+
 
