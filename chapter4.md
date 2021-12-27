@@ -46,6 +46,18 @@ two overloads of wait() ： wait_for() wait_until()
 ### clocks
 ### durations
 ### time points
+### fucntions accept timeouts  
+
+## using synchronization of operations to simplify code
+
+### functional programming with futures
+functional programming 
+c++ multiparadigm
+
+FP-style Quicksort
+
+
+
 
 
 
