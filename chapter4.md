@@ -59,7 +59,10 @@ FP-style parallel quicksort using futures
 
 ### synchronizing operations with message passing
 
-communicating sequential processes： Finite State Machine
+communicating sequential processes： Finite State Machine : actor model
+
+### continuation-stytle concurrency with the concurrency TS
+
 
 
 
