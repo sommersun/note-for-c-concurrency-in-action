@@ -55,8 +55,11 @@ functional programming
 c++ multiparadigm
 
 FP-style Quicksort
+FP-style parallel quicksort using futures
 
+### synchronizing operations with message passing
 
+communicating sequential processes： Finite State Machine
 
 
 
