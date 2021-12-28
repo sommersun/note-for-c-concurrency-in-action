@@ -63,6 +63,19 @@ communicating sequential processes： Finite State Machine : actor model
 
 ### continuation-stytle concurrency with the concurrency TS
 
+### waiting for more than one future
+waiting and switch cam be avoided with std::experimental::when_all
+
+### waitinh for the first future in a set with when_any
+
+### latches and barriers in the Concurrency TS
+
+### A basic latch type: std::experimental::latch
+waiting for events with std::experimental::latch
+
+### std::experimental::barrier : a basic barrrier
+
+### std::experimental::flex_barrier-std::experimental::barrier's flexible friend
 
 
 
