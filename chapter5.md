@@ -12,3 +12,12 @@ atomic : still race condintion , but no undefined behavior
 
 ### modification orders
 
+## 2. Atomic operations and types in C++  
+
+### the standard atomic types  
+
+### operations on std::atomic_flag
+spinlock mutex  
+
+### operations on std::atomic<bool>
+
