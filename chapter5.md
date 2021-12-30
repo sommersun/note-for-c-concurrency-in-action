@@ -19,5 +19,6 @@ atomic : still race condintion , but no undefined behavior
 ### operations on std::atomic_flag
 spinlock mutex  
 
-### operations on std::atomic<bool>
-
+### operations on std::atomic<bool>  
+ 
+### operations on std::atomic<T*>: pointer arithmetic
