@@ -22,3 +22,5 @@ spinlock mutex
 ### operations on std::atomic<bool>  
  
 ### operations on std::atomic<T*>: pointer arithmetic
+
+### operations on standard atomic integral types
